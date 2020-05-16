@@ -135,7 +135,7 @@ python.org/pypi/websocket-client/
 
 HTTP 参数污染（HPP）是一种绕过 WAF/IPS 防护机制（[这里](https://www.imperva.com/resources/glossary/http-parameter-pollution) 有相关介绍）的方法，对 ASP/IIS 和 ASP.NET/IIS 平台尤其有效。如果你怀疑目标使用了这种防护机制，可以尝试使用此开关以绕过它。
 
-## 针对 WAF/IPS 防护进行彻底的测试
+## 针对 WAF/IPS 防护进行彻底的测试 / `Make a thorough testing for a WAF/IPS protection`
 
 开关：`--identify-waf`
 
@@ -248,7 +248,7 @@ $ python sqlmap.py --purge -v 3
 [...]
 ```
 
-## 只有在使用启发式检测时才进行彻底的测试
+## 只在使用启发式检测时才执行彻底的测试 / `Conduct thorough tests only if positive heuristic(s)`
 
 开关：`--smart`
 
