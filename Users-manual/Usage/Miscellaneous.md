@@ -139,7 +139,17 @@ HTTP 参数污染（HPP）是一种绕过 WAF/IPS 防护机制（[这里](https:
 
 开关：`--identify-waf`
 
+<details>
+<summary>英文原文</summary>
+sqlmap can try to identify backend WAF/IPS protection (if any) so user could do appropriate steps (e.g. use tamper scripts with `--tamper`). Currently around 30 different products are supported (Airlock, Barracuda WAF, etc.) and their respective WAF scripts can be found inside `waf` directory.
+</details>
+
 sqlmap 可以尝试识别后端 WAF/IPS 防护（如果有），以便用户可以执行恰当的步骤（例如：通过选项 `--tamper` 使用篡改脚本）。目前，大约支持 30 种不同的产品（例如：Airlock，Barracuda WAF 等），可以在 `waf` 目录下找到它们对应的 WAF 脚本。
+
+<details>
+<summary>英文原文</summary>
+Example against a MySQL target protected by the ModSecurity WAF:
+</details>
 
 针对受 ModSecurity WAF 防护的 MySQL 目标示例：
 
@@ -252,7 +262,17 @@ $ python sqlmap.py --purge -v 3
 
 开关：`--smart`
 
+<details>
+<summary>英文原文</summary>
+There are cases when user has a large list of potential target URLs (e.g. provided with option `-m`) and he wants to find a vulnerable target as fast as possible. If switch `--smart` is used, only parameters with which DBMS error(s) can be provoked, are being used further in scans. Otherwise they are skipped.
+</details>
+
 某些情况下，用户拥有大量潜在目标 URL（例如：使用选项 `-m`）列表，同时他想要尽快找到易受攻击的目标。如果使用了开关 `--smart`，则只有能引发 DBMS 错误的参数会在进一步的扫描中被使用。否则会被跳过。
+
+<details>
+<summary>英文原文</summary>
+Example against a MySQL target:
+</details>
 
 针对 MySQL 目标的示例：
 
